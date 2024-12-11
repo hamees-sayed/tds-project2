@@ -1,25 +1,22 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["numpy", "pandas", "scikit-learn", "chardet", "requests", "seaborn", "matplotlib", "python-dotenv"]
+# ///
+
 import os
 import sys
-import base64
-import subprocess
-
-packages = ["numpy", "pandas", "scikit-learn", "chardet", "requests", "seaborn", "matplotlib", "python-dotenv"]
-for package in packages:
-    try:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-    except subprocess.CalledProcessError as e:
-        print(f"Failed to install '{package}'. Error: {e}")
-
-import pandas as pd
-import chardet
 import json
+import base64
+import chardet
 import requests
+import subprocess
+import pandas as pd
 import seaborn as sns
+from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
-from dotenv import load_dotenv
+from sklearn.preprocessing import StandardScaler
 
 class DataAnalyzer:
     def __init__(self, dataset_path, api_key):
