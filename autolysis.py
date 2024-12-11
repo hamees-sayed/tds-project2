@@ -205,7 +205,7 @@ class DataAnalyzer:
                     "content": [
                         {
                             "type": "text",
-                            "text": f"Create a detailed and engaging story based on this image. This is for a project and consider it as a report, don't specify things like date, language, prepared by etc. DO NOT attach any images, image links, or additional references to images in your response. Only include the narrative text based on the provided context, you can make appropriate headings and subheadings, but not too many. I am providing headers for context, but do not directly reference it in your narrative. Focus only on analyzing the data structure and overall trends.\n\n headers:{self.headers_json}. Go over the following points briefly: 1. The data you received, 2. The analysis you carried out, 3. The insights you discovered, 4. The implications of your findings (i.e. what to do with the insights)."
+                            "text": f"Create a detailed and engaging story based on this image. This is for a project and consider it as a report, don't specify things like date, language, prepared by etc. DO NOT attach any images, image links, or additional references to images in your response. Only include the narrative text based on the provided context, you can make appropriate headings and subheadings, but not too many. I am providing headers for context, but do not directly reference it in your narrative. Focus only on analyzing the data structure and overall trends.\n\n headers:{self.headers_json}."
                         },
                         {
                             "type": "image_url",
